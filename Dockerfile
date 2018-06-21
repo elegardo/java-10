@@ -11,7 +11,7 @@ RUN set -ex && \
 RUN /opt/jdk/bin/jlink \
     --module-path /opt/jdk/jmods \
     --verbose \
-    --add-modules java.base,java.logging,java.xml,jdk.unsupported,java.sql,java.naming,java.desktop,java.management,java.security.jgss,java.instrument \
+    --add-modules java.base,java.logging,java.xml,jdk.unsupported,java.sql,java.naming,java.desktop,java.management,java.security.jgss,java.instrument,java.xml.bind \
     --output /opt/jdk-minimal \
     --compress 2 \
     --no-header-files
